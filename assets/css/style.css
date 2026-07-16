@@ -110,7 +110,19 @@
   --transition-2: 0.5s ease-in-out;
 
 }
+.avatar-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
 
+.avatar-box {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
 .sidebar.active {
   max-height: 560px;
 }
