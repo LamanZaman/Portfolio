@@ -111,9 +111,34 @@
 
 }
 
+.sidebar.active {
+  max-height: 560px;
+}
 
+main {
+  margin-bottom: 100px;
+}
 
+@media (min-width: 580px) {
+  .sidebar.active {
+    max-height: 620px;
+  }
+}
 
+.avatar-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media (min-width: 580px) {
+  .avatar-img { width: 120px; height: 120px; }
+}
+
+@media (min-width: 1250px) {
+  .avatar-img { width: 150px; height: 150px; }
+}
 
 /*-----------------------------------*\
   #RESET
