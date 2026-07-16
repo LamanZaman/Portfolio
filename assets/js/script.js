@@ -154,6 +154,22 @@ for (let i = 0; i < navigationLinks.length; i++) {
         navigationLinks[i].classList.remove("active");
       }
     }
+const contactForm = document.querySelector("[data-form]");
 
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_1xkabqp", "template_2868lvm", this)
+      .then(() => {
+        alert("Mesajınız göndərildi!");
+        contactForm.reset();
+      })
+      .catch((error) => {
+        alert("Xəta baş verdi, yenidən cəhd edin.");
+        console.error(error);
+      });
+  });
+}
   });
 }
